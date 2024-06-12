@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.bg {
+    position:absolute;
+    z-index:-1;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    
+    background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),
+                                    radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),
+                                    radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                                    radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                                    radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                                    radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, 
+                                    rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                                    radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%,
+                                    rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                                    radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, 
+                                    rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                                    radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, 
+                                    rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                                    radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%,
+                                    rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                                    radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, 
+                                    rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                                    linear-gradient(135deg, #348F50,#56B4D3);
+    
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    max-width: 900px; /* Adjust as needed */
+    margin: 100px auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex; /* Use flexbox for split layout */
+}
+
+.left {
+    flex: 1; /* Take up 50% of container width */
+    padding: 0 15px;
+    border-right: 2px solid #ccc; /* Add border to separate from the right side */
+}
+
+.right {
+    flex: 1; /* Take up 50% of container width */
+    padding: 0 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.updateButton {
+    background-color: #2196F3; /* Blue color for update button */
+    color: white;
+}
+
+.updateButton:hover {
+    background-color: #0b7dda; /* Darker blue on hover */
+}
+
+.deleteButton {
+    background-color: #ff5757; /* Red color for delete button */
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #d23f3f; /* Darker red on hover */
+}
+
+#totalProducts {
+    margin-top: 10px;
+    color: #333;
+}
